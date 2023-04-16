@@ -1,0 +1,32 @@
+CADENA [28] non
+ENTERO sbh,nht,snt,boni,dedu,sal_bru
+INICIO
+ESCRIBA "INGRESE EL SALARIO BASICO LA HORA: "
+LEA sbh
+ESCRIBA "INGRESE EL NUMERO DE HORAS TRABAJADAS: "
+LEA nht
+	SI(nht <= 48)entonces
+		boni <- 20000
+	SINO
+		SI(nht <= 58) entonces
+		boni <- 50000
+		SINO
+		boni <- 100000
+		FIN SI
+	FIN SI
+	
+	SI(sbh <= 5000)entonces
+		dedu <- 10000
+	SINO
+		SI(sbh <= 8000)entonces
+		dedu <- 20000
+		SINO
+		dedu <- 50000
+		FIN SI
+	FIN SI
+	sal_bru <- nht * sbh
+	snt <- sal_bru + boni - dedu
+	
+	escriba snt
+FIN  
+	

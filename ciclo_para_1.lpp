@@ -1,0 +1,15 @@
+entero num1,num2,resultado,i
+INICIO
+	resultado <- 0
+	i <- 0
+	escriba "elija el primer numero: "
+	lea num1
+	escriba "elija el segundo numero: "
+	lea num2
+	
+		PARA i <-1 hasta num2 haga
+			resultado <- resultado + num1
+		Fin PARA
+		escriba "el resultado es: ", resultado
+		
+FIN

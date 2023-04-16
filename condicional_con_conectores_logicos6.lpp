@@ -1,0 +1,28 @@
+ENTERO n1,n2,n3
+INICIO
+ESCRIBA "INGRESE TRES NUMEROS DIFERENTES "
+LEA n1,n2,n3
+	SI(n1>n2) Y (n1>n3)entonces
+		SI(n2>n3) entonces
+			escriba n1," ",n2," ", n3
+		SINO
+			escriba n1," ",n3," ", n2
+		FIN SI
+	SINO
+		SI(n2>n1) Y (n2>n3)entonces
+			SI(n1>n3)entonces
+				escriba n2," ",n1," ",n3
+			SINO
+				escriba n2," ",n3," ", n1
+			FIN SI
+		SINO
+			SI(n3>n1) Y (n3>n2)entonces
+				SI(n2>n1)entonces
+					escriba n3," ", n2," ", n1
+				SINO
+					escriba n3," ", n1, " ", n2
+				FIN SI
+			FIN SI
+		FIN SI
+	FIN SI
+FIN

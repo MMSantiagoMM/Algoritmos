@@ -1,0 +1,24 @@
+ENTERO n1,n2,n3
+INICIO
+	ESCRIBA "EL PRIMER NUMERO ES: "
+	LEA n1
+	ESCRIBA "EL SEGUNDO NUMERO ES: "
+	LEA n2
+	ESCRIBA "EL TERCER NUMERO ES: "
+	LEA n3
+	
+	SI(n1>n2)entonces
+		SI(n1>n3) entonces
+			escriba "el primer numero es el mayor"
+		FIN SI
+	SINO
+		SI(n2>n3)entonces
+			escriba "el segundo numero es el mayor"
+		SINO
+			escriba "el tercer numero es el mayor"
+		FIN SI
+	FIN SI
+FIN
+		
+		
+		

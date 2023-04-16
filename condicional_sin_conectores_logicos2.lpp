@@ -1,0 +1,17 @@
+CADENA [30] sex,sport,mujer,baloncesto
+ENTERO edad
+INICIO
+ESCRIBA "Cual es su sexo: "
+LEA sex
+ESCRIBA "Cual es su deporte: "
+LEA sport
+ESCRIBA "Cual es su edad: "
+LEA edad
+	SI(sex = mujer) entonces
+		SI(edad >= 18) entonces
+			SI(sport = baloncesto) entonces
+			FIN SI
+		FIN SI
+	FIN SI
+	ESCRIBA "es mujer, mayor de edad y practica baloncesto"
+FIN

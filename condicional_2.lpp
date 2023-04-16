@@ -1,0 +1,24 @@
+CADENA [20] placa1,placa2
+ENTERO num_pasaj,dinero_recogido1,dinero_recogido2,valor_pasaje
+INICIO
+ESCRIBA "Ingrese la placa: "
+LEA placa1
+ESCRIBA "Numero de pasajeros transportados: "
+LEA num_pasaj
+dinero_recogido1 <- num_pasaj * valor_pasaje
+ESCRIBA "Ingrese el valor del pasaje: "
+LEA valor_pasaje
+ESCRIBA "Ingrese la placa: "
+LEA placa2
+ESCRIBA "Numero de pasajeros transportados: "
+LEA num_pasaj
+ESCRIBA "Ingrese el valor del pasaje: "
+LEA valor_pasaje
+dinero_recogido2 <- num_pasaj * valor_pasaje
+	SI(dinero_recogido1 > dinero_recogido2) entonces
+		ESCRIBA placa1
+	SINO
+		ESCRIBA placa2
+	FIN SI
+FIN
+

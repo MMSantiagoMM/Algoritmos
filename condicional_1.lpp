@@ -1,0 +1,24 @@
+CADENA [35] nom
+ENTERO sal_bru1,sal_bru2,dedu,boni,sal_net1, sal_net2
+INICIO
+escriba "Ingrese el primer nombre: "
+LEA nom
+escriba "Ingrese el salario bruto del trabajador 1: "
+LEA sal_bru1
+dedu <- sal_bru1 * 0.08
+boni <- sal_bru1 * 0.10
+sal_net1 <- sal_bru1 - dedu + boni
+escriba "Ingrese el segundo nombre: "
+LEA nom
+escriba "Ingrese el salario bruto del trabajador 2: "
+LEA sal_bru2
+dedu <- sal_bru2 * 0.08
+boni <- sal_bru2 * 0.10
+sal_net2 <- sal_bru2 - dedu + boni
+	SI(sal_net1 > sal_net2) entonces
+		escriba nom, "gana: ", sal_bru1
+	SINO
+		escriba nom, " gana:", sal_bru2
+	FIN SI
+	
+FIN

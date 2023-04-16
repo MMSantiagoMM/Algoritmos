@@ -1,0 +1,33 @@
+REAL not1,not2,not3,not4,not_def
+INICIO
+ESCRIBA "INGRESE SU PRIMER NOTA: "
+LEA not1
+ESCRIBA "INGRESE SU SEGUNDA NOTA: "
+LEA not2
+ESCRIBA "INGRESE SU TERCERA NOTA: "
+LEA not3
+ESCRIBA "INGRESE SU CUARTA NOTA: "
+LEA not4
+not_def <- (not1+not2+not3+not4)/4
+	SI(not_def >= 4.5)  entonces
+		escriba "Excelente"
+	SINO
+		SI(not_def >= 4)entonces
+			escriba "Sobresaliente"
+		SINO
+			SI(not_def >= 3.5)entonces
+				escriba "B"
+			SINO
+				SI(not_def >= 3)entonces
+					escriba "Aceptable"
+				SINO
+					SI(not_def >= 2)entonces
+						escriba "Insuficiente"
+					SINO
+						escriba "Deficiente"
+					FIN SI
+				FIN SI
+			FIN SI
+		FIN SI
+	FIN SI
+FIN

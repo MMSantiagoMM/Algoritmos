@@ -1,0 +1,15 @@
+ENTERO num1,num2,resultado,i
+	
+	
+INICIO 
+	i <- 0
+	resultado <- 0
+	ESCRIBA "numero1 "
+	LEA num1
+	ESCRIBA "numero2 "
+	LEA num2
+	PARA i <-1 hasta num2 haga
+	resultado <- resultado + num1
+	FIN PARA
+	ESCRIBA resultado
+FIN

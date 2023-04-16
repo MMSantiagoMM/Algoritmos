@@ -1,0 +1,12 @@
+ENTERO edad
+REAL estat
+INICIO
+ESCRIBA "Ingrese la edad: "
+LEA edad
+ESCRIBA "Ingrese la estatura: "
+LEA estat
+	SI(edad >= 18) Y (estat > 1.60) entonces
+		escriba "es mayor "
+	FIN SI
+FIN
+	

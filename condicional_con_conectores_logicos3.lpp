@@ -1,0 +1,17 @@
+CADENA [20] sex
+ENTERO edad,peso
+REAL estat
+INICIO
+ESCRIBA "Ingrese su sexo: "
+LEA sex
+ESCRIBA "Ingrese su edad: "
+LEA edad
+ESCRIBA "Ingrese su estatura: "
+LEA estat
+ESCRIBA "Ingrese su peso: "
+LEA peso
+	SI((sex = "hombre") Y (edad >= 18) Y (estat >= 1.70) Y (peso < 75)) o ((sex = "mujer") Y (edad > 16) Y (estat >= 1.70) Y (peso <= 60))entonces
+		ESCRIBA " Es apt@"
+	FIN SI
+
+FIN
