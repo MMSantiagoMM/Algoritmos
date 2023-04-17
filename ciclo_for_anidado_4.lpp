@@ -1,0 +1,17 @@
+CADENA [20] arti
+ENTERO precio,cantidad,i,val_total
+INICIO
+	PARA i <- 1 hasta 2 haga
+	ESCRIBA "CUAL ES EL NOMBRE DEL ARTICULO: "
+	LEA arti
+	ESCRIBA "CUAL ES EL PRECIO: "
+	LEA precio
+	ESCRIBA "CUAL ES LA CANTIDAD: "
+	LEA cantidad
+	val_total <- cantidad * precio
+		SI(val_total > 50000) entonces
+			val_total <- val_total - (val_total * 0.10)
+		FIN SI
+	ESCRIBA "NOMBRE DEL ARTICULO VENDIDO: ",arti," ", "VALOR TOTAL DE LA VENTA: ",val_total
+	FIN PARA
+FIN

@@ -1,0 +1,19 @@
+CADENA [30] carn
+ENTERO mat,estr,matri,i,n
+INICIO
+	ESCRIBA "INGRESE EL NUMERO DE REGISTROS"
+	LEA n
+	PARA i <- 1 hasta n haga
+	ESCRIBA "INGRESE EL NUMERO DEL CARNET: "
+	LEA carn
+	ESCRIBA "INGRESE LA CANTIDAD DE MATERIAS MATRICULADAS: "
+	LEA mat
+	ESCRIBA "INGRESE EL ESTRATO SOCIAL: "
+	LEA estr
+	matri <- mat * 100000
+		SI(mat > 5) Y (estr = 1) entonces
+			matri <- matri - (matri * 0.20)
+		FIN SI
+	ESCRIBA "EL NUMERO DE CARNET ES: "," ",carn,"EL PRECIO DE LA MATRICULA ES: ", matri
+	FIN PARA
+FIN

@@ -1,0 +1,16 @@
+CADENA [29] nombre
+ENTERO edad,i
+INICIO
+	PARA i <- 1 hasta 2 haga
+	ESCRIBA "DIGITE EL NOMBRE: "
+	LEA nombre
+	ESCRIBA "DIGITE LA EDAD: "
+	LEA edad
+		SI(edad >= 18) entonces
+			escriba nombre," ","Es mayor de edad"
+			
+		SINO
+			escriba nombre," ","Es menor de edad"
+		FIN SI
+	FIN PARA
+FIN

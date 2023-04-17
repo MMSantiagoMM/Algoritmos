@@ -1,0 +1,40 @@
+CADENA [50] nom,nmayor
+ENTERO edad,sex,deport,N,i,con_f,acum_f,con_p_c,con_m_c,m,c_m_p
+REAL est,prom_per_fut,porc_mujer_cicli,estmayor
+INICIO
+	ESCRIBA "REDACTE EL NUMERO DE REGISTROS QUE DESEA INGRESAR: "
+		LEA N
+		con_f <-0
+		acum_f <-0
+		con_p_c <- 0
+		con_m_c <- 0
+		estmayor <-0
+		PARA i <- 1 hasta N haga
+		ESCRIBA "CUAL ES EL NOMBRE: "
+		LEA nom
+		ESCRIBA "CUAL ES LA EDAD"
+		LEA edad
+		ESCRIBA "CUAL ES EL SEXO : "
+		LEA sex
+		ESCRIBA "CUAL ES EL DEPORTE (1=natación, 2= fútbol, 3=ciclismo, 4=patinaje, 5=otro deporte): "
+		LEA deport
+		ESCRIBA "CUAL ES LA ESTATURA"
+		LEA est
+		CASO deport
+		4: SI(sex = 2) entonces
+				SI(est > estmayor) entonces
+					estmayor <- est
+					nmayor <- nom
+				FIN SI
+			FIN SI
+		FIN CASO
+		FIN PARA
+		porc_mujer_cicli <- con_m_c * 100 / con_p_c
+		prom_per_fut <- acum_f / con_f
+		ESCRIBA "LA MUJER MAS ALTA EN PATINAJE ES: ",nmayor
+FIN
+		
+
+
+
+

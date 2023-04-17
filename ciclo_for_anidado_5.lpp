@@ -1,0 +1,18 @@
+CADENA [20] nom
+ENTERO edad,i
+REAL est
+INICIO
+	PARA i <- 1 hasta 20 haga
+	ESCRIBA "CUAL ES EL NOMBRE: "
+	LEA nom
+	ESCRIBA "CUAL ES LA EDAD: "
+	LEA edad
+	ESCRIBA "CUAL ES LA ESTATURA: "
+	LEA est
+		SI(edad >= 18)entonces
+			SI(est > 1.80) entonces
+			escriba nom
+			FIN SI
+		FIN SI
+	FIN PARA
+FIN

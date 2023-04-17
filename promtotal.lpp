@@ -1,0 +1,41 @@
+CADENA [20] nom,nomalt
+ENTERO edad,sex,deport,N,i,con_f,acum_f,con_p_c,con_m_c,m,c_m_p,mjr_al_pa,c_n,c_t,a_t,total
+REAL est,prom_per_fut,porc_mujer_cicli
+INICIO
+	ESCRIBA "REDACTE EL NUMERO DE REGISTROS QUE DESEA INGRESAR: "
+		LEA N
+		con_f <-0
+		acum_f <-0
+		con_p_c <- 0
+		con_m_c <- 0
+		mjr_al_pa <-0
+		c_m_p <-0
+		c_n <- 0
+		c_t <- 0
+		a_t <- 0
+		PARA i <- 1 hasta N haga
+		ESCRIBA "CUAL ES EL NOMBRE: "
+		LEA nom
+		ESCRIBA "CUAL ES LA EDAD"
+		LEA edad
+		ESCRIBA "CUAL ES EL SEXO : "
+		LEA sex
+		ESCRIBA "CUAL ES EL DEPORTE (1=natación, 2= fútbol, 3=ciclismo, 4=patinaje, 5=otro deporte): "
+		LEA deport
+		ESCRIBA "CUAL ES LA ESTATURA"
+		LEA est
+		CASO deport
+		1,2,3,4,5: c_t <- c_t + 1
+					a_t <- a_t + edad
+		FIN CASO
+		FIN PARA
+		total <- a_t / c_t
+		porc_mujer_cicli <- con_m_c * 100 / con_p_c
+		prom_per_fut <- acum_f / con_f
+		ESCRIBA "EL PROMEDIO DE EDAD DE TODAS LAS PERSONAS ES: ",total
+FIN
+		
+
+
+
+

@@ -1,0 +1,25 @@
+CADENA [20]nombre,nomalta
+ENTERO i,N,contador
+REAL estatura,mujeralta
+INICIO
+ESCRIBA "INGRESE LA CANTIDAD DE REGISTROS: "
+LEA N
+contador <- 0
+mujeralta <-0
+	PARA i <- 1 hasta N haga
+	ESCRIBA "CUAL ES EL NOMBRE: "
+	LEA nombre
+	ESCRIBA "CUAL ES LA ESTATURA: "
+	LEA estatura
+		SI(estatura > mujeralta)entonces
+			nombre <- nomalta
+		FIN SI
+	FIN PARA
+	ESCRIBA "LA ´PERSONAS CON LA ESTATURA MÁS ALTA ES: ", nomalta
+FIN 
+	
+		
+
+
+
+

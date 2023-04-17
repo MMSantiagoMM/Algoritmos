@@ -1,0 +1,70 @@
+CADENA [20]nom
+ENTERO edad,sex,dep,i,n,p,C
+REAL est,pro_edad_pers_fut,porce_mujer_cicli,pro_edad_total
+INICIO
+c_f <- 0
+a_f <- 0
+c_c <- 0
+c_c_m <- 0
+c_p_m <- 0
+c_n <- 0
+c_t <- 0
+a_t <- 0
+m_a_p <- 0
+
+ESCRIBA "INGRESE EL NUMERO DE REGISTROS QUE DESEA PROCESAR: "
+LEA n
+	PARA i <- 1 hasta n haga
+	ESCRIBA "CUAL ES EL NOMBRE: "
+	LEA nom
+	ESCRIBA "ESCRIBA LA EDAD: "
+	LEA edad
+	ESCRIBA "ESCRIBA EL SEXO (HOMBRE=1 MUJER=2: "
+	LEA sex
+	ESCRIBA "ESCRIBA EL DEPORTE (NATACION=1 FUTBOL=2 CICLISMO=3 PATINAJE=4 OTRO=5"
+	LEA dep
+	ESCRIBA "ESCRIBA LA ESTATURA: "
+	LEA est
+		CASO dep
+		2: c_f <- c_f + 1
+			a_f <- a_f + edad
+		3: c_c <- c_c + 1
+			SI(sex = 2) entonces
+				c_c_m <- c_c_m + 1
+			FIN SI
+		4: SI(sex = 2) entonces 
+			c_p_m <- c_p_m + 1
+			c_p_m <- C
+			est_m <- 0
+				PARA p <- 1 hasta C haga
+					SI(est>est_m) entonces
+						est_m <- est
+						escriba nom
+					FIN SI
+				FIN PARA
+			FIN SI
+		1: SI(est > 1.80) entonces
+			c_n <- c_n + 1
+			FIN SI
+		1,2,3,4,5: c_t <- c_t + 1
+					a_t <- a_t + edad
+		FIN CASO
+	pro_edad_pers_fut <- a_f / c_f
+	porce_mujer_cicli <- c_c_m * 100 / c_c
+	est_m <- nom
+	c_n
+	pro_edad_total <- a_t/a_t
+	ESCRIBA "EL PROMEDIO DE EDAD DE LAS PERSONAS QUE PREFIEREN EL FUTBOL ES: ",pro_edad_pers_fut," ","EL PORCENTAJE DE LAS UJERES QUE PREFIEREN EL CICLISMO RESPECTO A LAS PERSONAS DE CICLISMO ES: ",porce_mujer_cicli
+			
+				
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			

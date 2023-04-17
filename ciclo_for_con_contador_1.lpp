@@ -1,0 +1,8 @@
+ENTERO num,i
+INICIO
+num <- 0
+	PARA i <- 1 hasta 15 haga
+		num <- num + 5
+		escriba num
+	FIN PARA
+FIN

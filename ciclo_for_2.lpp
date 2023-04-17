@@ -1,0 +1,19 @@
+CADENA [30] nom
+ENTERO sbh,nht,dedu,boni,salbru,salnet,k
+INICIO
+	PARA k <- 1 hasta 3 haga
+	ESCRIBA "INGRESE EL NOMBRE DEL TRABAJADOR: "
+	LEA nom1
+	ESCRIBA "INGRESE EL SALARIO BASICO POR HORA: "
+	LEA sbh
+	ESCRIBA "INGRESE EL NUMERO DE HORAS TRABAJADAS AL MES: "
+	LEA nht
+	ESCRIBA "INGRESE LAS BONIFICACIONES: "
+	LEA boni
+	ESCRIBA "INGRESE LAS DEDUCCIONES: "
+	LEA dedu
+	salbru <- sbh * nht
+	salnet <- salbru - dedu + boni
+	FIN PARA
+	ESCRIBA "EL NOMBRE DEL TRABADOR ES: ", nom," ", "SU SALARIO BRUTO ES DE: ",salbru, " ", "SU SALARIO NETO ES DE: ", salnet
+FIN

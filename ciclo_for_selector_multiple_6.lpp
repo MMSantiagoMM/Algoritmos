@@ -1,0 +1,25 @@
+CADENA [20] placa
+ENTERO n_pasaj,d_rec,p_cond,p_b,p_bs,p_c,i,tip
+INICIO
+	PARA i <- 1 hasta 2 haga
+	ESCRIBA "INGRESE LA PLACA DEL VEHICULO: "
+	LEA placa
+	ESCRIBA "ESCRIBA EL TIPO DE VEHICULO (BUS=1, BUSETA=2, COLECTIVO=3): "
+	LEA tip
+	ESCRIBA "INGRESE EL NUMERO DE PASAJEROS: "
+	LEA n_pasaj
+		CASO tip
+		1: p_b <- 400
+			d_rec <- n_pasaj * p_b 
+		2: p_bs <- 500
+			d_rec <- n_pasaj * p_bs 
+		3: p_c <- 800
+			d_rec <- n_pasaj * p_c
+		FIN CASO 
+	p_cond <- d_rec * 0.20
+	
+	ESCRIBA "LA PLACA DEL VEHICULO ES: ",placa," ","EL DINERO RECOLECTADO ES: ", d_rec," ","EL PASO DEL CONDUCTOR ES: ",p_cond
+	
+	FIN PARA
+FIN 
+	
